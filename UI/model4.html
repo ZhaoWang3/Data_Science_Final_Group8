@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hawaii Tourism_Group8</title>
+	<link rel="stylesheet" type="text/css" href="css/home_style.css">
+	<link rel="stylesheet" type="text/css" href="css/home_queries.css">
+	<link rel="stylesheet" type="text/css" href="css/model_style.css">
+	<meta name="viewpoint" content="width=device-width,initial-scale=1">
+    
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
+</head>
+
+<body>
+	<div class="container1">
+		
+		<div class="header1">		
+           <!--<nav class="navbar navbar-default">-->
+		    <div class="navigation" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <nav class="navbar navbar-default navbar-fixed-top">
+
+		    <div class="header2">
+				<h1><a class="link1" href="home.html">Hawaii Tourism Prediction</a></h1>
+			</div>
+			
+           <ul class="menu" class="nav navbar-nav">
+             <li class="link-list-item dropli"> <a href="model1.html">Island/Country Visitor</a>
+            </li>
+            <li class="link-list-item dropli"> <a href="model2.html">Island Visitor</a>
+           	</li>
+           	<li class="link-list-item"> <a href="model3.html">Total Visitor</a></li>
+           	<li class="link-list-item"> <a href="model4.html">Total Expenditure</a></li>
+            <!--
+           	<li class="link-list-item"> <a href="">CART</a></li>
+           	<li class="link-list-item">SEARCH <input style="display:inline" type="text" onKeyUp="ajaxFunction(this.value)"/></li>-->
+          </ul>
+		  </nav>
+		  </div>
+	   </div>
+
+    <div class="title1 title2">
+		</div>
+
+   
+		<div class="wrapper">
+    <h2 style="position:absolute;top:-125px;margin-left:10px;color:#007acc"><img src="img/3.jpg" style="height:40px;width:40px"/>&nbsp&nbspTotal Expenditure Prediction&nbsp&nbsp<img src="img/3.jpg" style="height:40px;width:40px"/></h2>
+    <div height="100%" width="20%" style="float:left;margin-left:20px">
+    <a style="text-decoration:none"><h3 onclick="return chart2()"><span class="glyphicon glyphicon-tag">&nbsp</span>Prediction</h3></a><br/>
+    <a style="text-decoration:none"><h3 onclick="return chart3()"><span class="glyphicon glyphicon-tag">&nbsp</span>Visualization</h3></a><br/>
+    <a style="text-decoration:none"><h3 onclick="return chart4()"><span class="glyphicon glyphicon-tag">&nbsp</span>Source Data</h3></a>
+  </div>
+  
+  <iframe scrolling="no" src="test4.html" id="predict" height="800" width="80%" style="border:none;margin-left:30px;margin-top:-65px"></iframe>
+  </div>
+
+
+
+		<div class="footer">
+            <div class="insidefooter"> 
+                <div id="cr">Hawaii Tourism Prediction_Group8</div>
+            </div>
+		</div>
+
+<script>
+    function chart2(){
+        var link2="test4.html";
+        document.getElementById("predict").src=link2;
+    }
+    function chart3(){
+        var link3="model4_v.html";
+        document.getElementById("predict").src=link3;
+    }
+    function chart4(){
+        var link4="test31.html";
+        document.getElementById("predict").src=link4;
+    }
+
+  </script>
+</body>
+</html>

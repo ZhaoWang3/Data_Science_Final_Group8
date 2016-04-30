@@ -1,0 +1,18 @@
+Login-AzureRmAccount 
+
+Get-AzureRmSubscription
+
+Get-AzureRmContext
+
+Set-AzureRmCurrentStorageAccount ¨CResourceGroupName ¡°test(your resource group)¡± ¨CStorageAccountName ¡°customer1215(your storage account name)¡±
+
+Get-AzureRmContext
+
+Get-AzureRmStorageAccount | Get-AzureStorageContainer | Get-AzureStorageBlob
+
+$storageAccountName = "storage-account-name"
+$containerName = "container-name"
+$storageAccountKey = " "
+$blobContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
+
+Set-AzureStorageBlobContent -File $filename -Container $containerName -Context $blobContext -Force

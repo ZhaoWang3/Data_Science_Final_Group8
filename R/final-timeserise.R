@@ -34,16 +34,13 @@ pred_snaive<-snaive(traindata,h=12)
 accuracy(pred_snaive)#123
 plot(pred_snaive)
 
-pred_rwf<-rwf(traindata,h=12, drift=T)
-accuracy(pred_rwf)#132
-plot(pred_rwf)
 
 pred_hw<-hw(traindata,h=12,seasonal='multiplicative')
 accuracy(pred_hw)#42.8
 plot(pred_hw)
 
 fit1<-ets(traindata)
-accuracy(predict(fit,12),testdata) #42.43
+accuracy(predict(fit1,12),testdata) #42.43
 plot(fit1)
 
 #stl+ets(AAN), compare to ets can avoid seasonality being ignored.
@@ -59,7 +56,4 @@ ma = arima(traindata, order = c(0, 1, 3),   seasonal=list(order=c(0,1,3), period
 p<-predict(ma,12)
 accuracy(p$pred,testdata)  #48
 
-pred_meanf<-meanf(traindata,h=12)
-accuracy(pred_meanf)#178
-plot(pred_meanf)
 
